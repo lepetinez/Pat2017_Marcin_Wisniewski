@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">zadanie1</string>
+    <string name="miejsce_wylotu">Miejsce wylotu:</string>
+    <string name="miejsce_przylotu">Miejsce przylotu:</string>
+    <string name="lot_w_obie_strony">Lot w obie strony</string>
+    <string name="data_wylotu">Data wylotu:</string>
+    <string name="data_przylotu">Data przylotu:</string>
+    <string name="doro_li">Dorośli:</string>
+    <string name="butt1">-</string>
+    <string name="_0">0</string>
+    <string name="_">+</string>
+    <string name="dzieci">Dzieci</string>
+    <string name="resminus">-</string>
+    <string name="_01">0</string>
+    <string name="plus">+</string>
+    <string name="szukaj_po_cze">Szukaj połączeń</string>
+</resources>
