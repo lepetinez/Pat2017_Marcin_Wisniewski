@@ -1,4 +1,5 @@
 package com.example.pc.zadanie1;
+
 import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,21 +20,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void onStart(){
+
+    public void onStart() {
 
         super.onStart();
 
-        adultsField = (EditText)findViewById(R.id.adultsQuantityTextField);
-        kidsField = (EditText)findViewById(R.id.kidsQuantityTextField);
+        adultsField = (EditText) findViewById(R.id.adultsQuantityTextField);
+        kidsField = (EditText) findViewById(R.id.kidsQuantityTextField);
 
-        EditText flightDateField = (EditText)findViewById(R.id.flightDateTextField);
-        EditText arrivalDateField = (EditText)findViewById(R.id.arrivalDateTextField);
+        EditText flightDateField = (EditText) findViewById(R.id.flightDateTextField);
+        EditText arrivalDateField = (EditText) findViewById(R.id.arrivalDateTextField);
 
         setDatePicker(flightDateField);
         setDatePicker(arrivalDateField);
 
-        EditText searchFlightField = (EditText)findViewById(R.id.flightTextField);
-        EditText searchArrivalField = (EditText)findViewById(R.id.arrivalTextField);
+        EditText searchFlightField = (EditText) findViewById(R.id.flightTextField);
+        EditText searchArrivalField = (EditText) findViewById(R.id.arrivalTextField);
 
         setSearchFieldEmpty(searchFlightField);
         setSearchFieldEmpty(searchArrivalField);
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         changePassengersTextFieldValue(decreaseKids);
     }
 
-    private void setDatePicker(EditText dateField){
+    private void setDatePicker(EditText dateField) {
 
         dateField.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -64,64 +66,64 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void changePassengersTextFieldValue(Button addOrDeletePassenger){
+
+    private void changePassengersTextFieldValue(Button addOrDeletePassenger) {
 
         addOrDeletePassenger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                switch(v.getId()){
+                switch (v.getId()) {
 
                     case R.id.increaseAdultsButton:
 
-                        updateTextField(adultsField,'I');
+                        updateTextField(adultsField, 'I');
                         break;
                     case R.id.increaseKidsButton:
 
-                        updateTextField(kidsField,'I');
+                        updateTextField(kidsField, 'I');
                         break;
                     case R.id.decreaseAdultsButton:
 
-                        updateTextField(adultsField,'D');
+                        updateTextField(adultsField, 'D');
                         break;
 
                     case R.id.decreaseKidsButton:
 
-                        updateTextField(kidsField,'D');
+                        updateTextField(kidsField, 'D');
                         break;
                 }
             }
         });
 
     }
-    private void updateTextField(EditText passengerTextField,char operation){
 
-        if(operation=='I'){
+    private void updateTextField(EditText passengerTextField, char operation) {
+
+        if (operation == 'I') {
 
             int passengersValue = Integer.parseInt(passengerTextField.getText().toString()) + 1;
             passengerTextField.setText(String.valueOf(passengersValue));
-        }
-        else{
+        } else {
 
             int passengersValue = Integer.parseInt(passengerTextField.getText().toString()) - 1;
 
-            if(passengersValue<0){
-            passengerTextField.setText("0");
-            }
-
-            else{
+            if (passengersValue < 0) {
+                passengerTextField.setText("0");
+            } else {
                 passengerTextField.setText(String.valueOf(passengersValue));
             }
         }
     }
-    private void setSearchFieldEmpty(final EditText searchCityField){
-        searchCityField.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                searchCityField.setText("");
-            }
-        }
+    private void setSearchFieldEmpty(final EditText searchCityField) {
+        searchCityField.setOnClickListener(new View.OnClickListener() {
+                                               @Override
+                                               public void onClick(View v) {
+
+                                                   searchCityField.setText("");
+                                               }
+                                           }
         );
     }
 

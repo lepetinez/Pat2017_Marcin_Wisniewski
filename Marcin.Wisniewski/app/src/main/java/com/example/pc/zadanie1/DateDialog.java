@@ -10,12 +10,12 @@ import android.widget.EditText;
 
 import java.util.Calendar;
 
-public class DateDialog extends DialogFragment implements DatePickerDialog.OnDateSetListener{
+public class DateDialog extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
-   private  EditText  dateFromDatePicker;
+    private EditText dateFromDatePicker;
 
-    public DateDialog(View view){
-        dateFromDatePicker = (EditText)view;
+    public DateDialog(View view) {
+        dateFromDatePicker = (EditText) view;
     }
 
     public Dialog onCreateDialog(Bundle SavedInstanceState) {
@@ -26,11 +26,12 @@ public class DateDialog extends DialogFragment implements DatePickerDialog.OnDat
         int month = currentDate.get(Calendar.MONTH);
         int day = currentDate.get(Calendar.DAY_OF_MONTH);
 
-        return new DatePickerDialog(getActivity(),this,year,month,day);
+        return new DatePickerDialog(getActivity(), this, year, month, day);
     }
-    public void onDateSet(DatePicker view,int year,int month,int day){
 
-        String date = day+"-"+(month+1)+"-"+year;
+    public void onDateSet(DatePicker view, int year, int month, int day) {
+
+        String date = day + "-" + (month + 1) + "-" + year;
         dateFromDatePicker.setText(date);
     }
 }
