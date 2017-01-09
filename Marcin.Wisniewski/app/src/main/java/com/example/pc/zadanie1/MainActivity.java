@@ -1,128 +1,75 @@
 package com.example.pc.zadanie1;
-import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-    private EditText adultsField;
-    private EditText kidsField;
+public class MainActivity extends Activity {
+
+    private static final String PREFS_NAME = "mypref";
+    private static final String PREF_USERNAME = "username";
+    private static final String PREF_PASSWORD = "password";
+    private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+            + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+    private static final String PASSWORD = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}";
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-    }
-    public void onStart(){
-
-        super.onStart();
-
-        adultsField = (EditText)findViewById(R.id.adultsQuantityTextField);
-        kidsField = (EditText)findViewById(R.id.kidsQuantityTextField);
-
-        EditText flightDateField = (EditText)findViewById(R.id.flightDateTextField);
-        EditText arrivalDateField = (EditText)findViewById(R.id.arrivalDateTextField);
-
-        setDatePicker(flightDateField);
-        setDatePicker(arrivalDateField);
-
-        EditText searchFlightField = (EditText)findViewById(R.id.flightTextField);
-        EditText searchArrivalField = (EditText)findViewById(R.id.arrivalTextField);
-
-        setSearchFieldEmpty(searchFlightField);
-        setSearchFieldEmpty(searchArrivalField);
-
-        Button increaseAdults = (Button) findViewById(R.id.increaseAdultsButton);
-        Button increaseKids = (Button) findViewById(R.id.increaseKidsButton);
-        Button decreaseAdults = (Button) findViewById(R.id.decreaseAdultsButton);
-        Button decreaseKids = (Button) findViewById(R.id.decreaseKidsButton);
-
-        changePassengersTextFieldValue(increaseAdults);
-        changePassengersTextFieldValue(decreaseAdults);
-        changePassengersTextFieldValue(increaseKids);
-        changePassengersTextFieldValue(decreaseKids);
-    }
-
-    private void setDatePicker(EditText dateField){
-
-        dateField.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        final EditText emailEditText = (EditText) findViewById(R.id.loginEditText);
+        final EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
+        Button loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
+            public void onClick(View v) {
+                if (validateEmail(emailEditText.getText().toString())) {
+                    emailEditText.setError("invalid E-mail !");
+                    emailEditText.requestFocus();
+                } else if (!validatePassword(passwordEditText.getText().toString())) {
+                    passwordEditText.setError("invalid password !");
+                    passwordEditText.requestFocus();
 
-                    DateDialog chosenDate = new DateDialog(v);
-                    FragmentTransaction transferDate = getFragmentManager().beginTransaction();
-
-                    chosenDate.show(transferDate, "DatePicker");
+                } else {
+                    rememberMe(emailEditText.getText().toString(), passwordEditText.getText().toString());
+                    showLogout(emailEditText.getText().toString());
                 }
             }
         });
     }
-    private void changePassengersTextFieldValue(Button addOrDeletePassenger){
 
-        addOrDeletePassenger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                switch(v.getId()){
-
-                    case R.id.increaseAdultsButton:
-
-                        updateTextField(adultsField,'I');
-                        break;
-                    case R.id.increaseKidsButton:
-
-                        updateTextField(kidsField,'I');
-                        break;
-                    case R.id.decreaseAdultsButton:
-
-                        updateTextField(adultsField,'D');
-                        break;
-
-                    case R.id.decreaseKidsButton:
-
-                        updateTextField(kidsField,'D');
-                        break;
-                }
-            }
-        });
-
-    }
-    private void updateTextField(EditText passengerTextField,char operation){
-
-        if(operation=='I'){
-
-            int passengersValue = Integer.parseInt(passengerTextField.getText().toString()) + 1;
-            passengerTextField.setText(String.valueOf(passengersValue));
-        }
-        else{
-
-            int passengersValue = Integer.parseInt(passengerTextField.getText().toString()) - 1;
-
-            if(passengersValue<0){
-            passengerTextField.setText("0");
-            }
-
-            else{
-                passengerTextField.setText(String.valueOf(passengersValue));
-            }
-        }
-    }
-    private void setSearchFieldEmpty(final EditText searchCityField){
-        searchCityField.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                searchCityField.setText("");
-            }
-        }
-        );
+    private boolean validateEmail(String email) {
+        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+        Matcher matcher = pattern.matcher(email);
+        return !matcher.matches();
     }
 
+    private boolean validatePassword(String password) {
+        Pattern pattern = Pattern.compile(PASSWORD);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
+
+    private void rememberMe(String user, String password) {
+        getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
+                .edit()
+                .putString(PREF_USERNAME, user)
+                .putString(PREF_PASSWORD, password)
+                .apply();
+    }
+
+    private void showLogout(String username) {
+        Intent intent = new Intent(this, LoggedActivity.class);
+        intent.putExtra("user", username);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+    }
 }
