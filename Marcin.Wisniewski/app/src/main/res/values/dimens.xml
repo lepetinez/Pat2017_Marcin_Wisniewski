@@ -1,5 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin1">20dp</dimen>
+    <dimen name="margin2">10dp</dimen>
+    <dimen name="marginTopTextview">0dp</dimen>
+    <dimen name="buttonLoginTop">12dp</dimen>
+    <dimen name="passwordTextLeftMargin">10dp</dimen>
+    <dimen name="listviewLayoutPaddingBotton">6dp</dimen>
+    <dimen name="listViewLayoutPaddingTop">6dp</dimen>
+    <dimen name="listViewLayoutPaddingLeft">8dp</dimen>
+    <dimen name="listViewLayoutPaddingLet">10dp</dimen>
+    <dimen name="listViewTitletPaddingTop">2dp</dimen>
+    <dimen name="listViewDescMarginLeft">10dp</dimen>
+    <dimen name="listViewDescMarginTop">7dp</dimen>
+    <dimen name="largeImageViewWidth">100dp</dimen>
+    <dimen name="largeImageViewHeight">100dp</dimen>
+    <dimen name="largeImagePaddingLeft">6dp</dimen>
+    <dimen name="largeTitlePadingLeft">10dp</dimen>
+    <dimen name="LargeTitlePaddingTop">2dp</dimen>
+    <dimen name="largeDescMarginLeft">11dp</dimen>
+    <dimen name="largeDescMarginTop">7dp</dimen>
+    <dimen name="largeListvievItemPaddingBottom">6dp</dimen>
+    <dimen name="largeListviewItemPaddingTop">6dp</dimen>
+    <dimen name="listViewHorizontalSpacing">1dp</dimen>
+    <dimen name="listViewVerticalSpacing">1dp</dimen>
+    <dimen name="listViewTextSize">22sp</dimen>
+    <dimen name="imageViewWidth">60dp</dimen>
+    <dimen name="imageViewHeight">60dp</dimen>
 </resources>

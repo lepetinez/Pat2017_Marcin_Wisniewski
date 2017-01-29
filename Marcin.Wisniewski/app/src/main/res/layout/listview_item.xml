@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/listviewLayoutPaddingBotton"
+    android:paddingTop="@dimen/listViewLayoutPaddingTop"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/url"
+        android:layout_width="@dimen/imageViewWidth"
+        android:layout_height="@dimen/imageViewHeight"
+        android:background="#FFFFFF"
+        android:paddingLeft="@dimen/listViewLayoutPaddingLeft"
+
+         />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/listViewTextSize"
+        android:layout_toRightOf="@+id/url"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:paddingLeft="@dimen/listViewLayoutPaddingLet"
+        android:paddingTop="@dimen/listViewTitletPaddingTop" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_toRightOf="@+id/url"
+        android:layout_marginLeft="@dimen/listViewDescMarginLeft"
+        android:layout_marginTop="@dimen/listViewDescMarginTop" />
+
+</RelativeLayout>

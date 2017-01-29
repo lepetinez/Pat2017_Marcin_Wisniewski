@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.8.0_b6068c733e1cbb96dbb60e2445632f1929671b35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.8.0_a3751e3c24cdba08b5e4ae077a943764d0ba679b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_19a5a4b2d677673ca26d5e01e5775fd718d3ba05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_a0bce45a7f7ef67b3511079da1d639ef95114236\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="10ab55236fb947d35491dade7d45974b5a4ef82e">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e0b5c194e820291b2755e4eb294d777930b79dcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e006c9b6f0aaed9d8c7934b74039738390fe3468">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.1.0_d629d0b6f019798340f03099974f779f9e8deb28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_c440ee138c399f23a8a2d3cac3183435fdb0d9d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_461b3cb396830e2dc6fb553624199066d1ac5f0f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_8c593908aea002d3da9330b8a0ed5ec0fe9e4ffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_37765671821ca44cdcce6727ad907f8f5aad3d98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42e2a33ee0d5f1ba8f67b0e39dc6df90ccf31c70">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7be6ff2857ac4eb89dd61b206643e9d6f2a1edfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.hannesdorfmann.mosby\viewstate\2.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="66898369cdbdcd732d7b0143aa12010cf4814005">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.hannesdorfmann.mosby-viewstate-2.0.1_03926eee83f1fc1207d4931a591b4834060d43f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_c12e034480239248376420bf13066879a6ab8532\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_e5d108f2c0d4f0270b8ac16c8ee37a32b61a4883\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_5896e29732055d4633bc83df42a26fa36f188feb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_b34308a24f2e1f7c2c4944dd74e16bf55e65ad64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.hannesdorfmann.mosby\mvp\2.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8d5f68a8fdd8283ea42b20259ae4adad9cbe5e94">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.hannesdorfmann.mosby-mvp-2.0.1_bd11af489983bd28134603ddebe84d6665830695\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.8.0_123369592138a1234beb49191d9885440f36d7d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_27880bff834a41a12c74dae306bad9242e871dfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.hdodenhof-circleimageview-2.1.0_48bb55532ea839047bb83072be9b15fbc0b4a450\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.felipecsl\gifimageview\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5553c3597d5f766a8364a49925fcbb304bb091b">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.felipecsl-gifimageview-2.1.0_5c24e219c8166042339f116c90a46277e25fbabd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\.gradle\caches\modules-2\files-2.1\com.hannesdorfmann.mosby\mvp-common\2.0.1\d75c9c5577143f3cf3fd63f61526a551f910b56f\mvp-common-2.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d75c9c5577143f3cf3fd63f61526a551f910b56f">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\mvp-common-2.0.1_c985e2e8d32809e951c00712283c8f2f5029f392\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\commons-io\commons-io\2.4\commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_8c8ed3f133d3d9c8e4370b999fb190d93c666f37\classes.dex" />
+    </item>
+
+</items>
