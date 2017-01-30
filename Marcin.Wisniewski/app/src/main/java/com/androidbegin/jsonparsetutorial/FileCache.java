@@ -5,6 +5,7 @@ import android.content.Context;
 import java.io.File;
 
 class FileCache {
+    private static final String CACHE_DIRECTORY = "JsonParseTutorialCache";
     private final File cacheDir;
 
     FileCache(Context context) {
@@ -12,7 +13,7 @@ class FileCache {
                 android.os.Environment.MEDIA_MOUNTED))
             cacheDir = new File(
                     android.os.Environment.getExternalStorageDirectory(),
-                    "JsonParseTutorialCache");
+                    CACHE_DIRECTORY);
         else
             cacheDir = context.getCacheDir();
     }

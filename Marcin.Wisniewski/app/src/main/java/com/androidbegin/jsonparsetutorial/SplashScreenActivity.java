@@ -21,9 +21,10 @@ public class SplashScreenActivity extends MvpActivity<SplashView, SplashPresente
     private static final String PREF_USERNAME = "username";
     private static final String PREF_PASSWORD = "password";
     private static final int THREAD_LENGTH = 5000;
+    private static final String USER = "user";
+    private static final String SAMOLOT = "samolocik.gif";
     private boolean PAUSE_FLAG = false;
     private Runnable RUNNABLE;
-    private static final String SAMOLOT = "samolocik.gif";
     private Handler RUNNABLE_HANDLER;
     private long TIME_OF_PAUSE;
     private long TIME_OF_CREATE;
@@ -88,7 +89,7 @@ public class SplashScreenActivity extends MvpActivity<SplashView, SplashPresente
 
     private void showLogout(String username) {
         Intent intent = new Intent(this, LoggedActivity.class);
-        intent.putExtra("user", username);
+        intent.putExtra(USER, username);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);

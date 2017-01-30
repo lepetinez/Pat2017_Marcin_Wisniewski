@@ -21,7 +21,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     private static final String PREF_USERNAME = "username";
     private static final String PREF_PASSWORD = "password";
     private static final int PERMISSION_REQUEST_CODE = 1;
-    private static final int SDK_NEEDS_PERMISSION= 23;
+    private static final int SDK_NEEDS_PERMISSION = 23;
     private EditText emailEditText;
     private EditText passwordEditText;
 

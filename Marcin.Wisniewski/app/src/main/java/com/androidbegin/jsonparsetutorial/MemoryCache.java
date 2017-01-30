@@ -1,7 +1,6 @@
 package com.androidbegin.jsonparsetutorial;
 
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import java.util.Collections;
 import java.util.Iterator;
@@ -10,20 +9,18 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 class MemoryCache {
-
-    private static final String TAG = "MemoryCache";
+    private static final int LIMIT_DIVIDER = 4;
     private final Map<String, Bitmap> cache = Collections
             .synchronizedMap(new LinkedHashMap<String, Bitmap>(10, 1.5f, true));
     private long size = 0;
     private long limit = 1000000;
 
     MemoryCache() {
-        setLimit(Runtime.getRuntime().maxMemory() / 4);
+        setLimit(Runtime.getRuntime().maxMemory() / LIMIT_DIVIDER);
     }
 
     private void setLimit(long new_limit) {
         limit = new_limit;
-        Log.i(TAG, "MemoryCache will use up to " + limit / 1024. / 1024. + "MB");
     }
 
     public Bitmap get(String id) {
@@ -50,7 +47,6 @@ class MemoryCache {
     }
 
     private void checkSize() {
-        Log.i(TAG, "cache size=" + size + " length=" + cache.size());
         if (size > limit) {
             Iterator<Entry<String, Bitmap>> iter = cache.entrySet().iterator();
             while (iter.hasNext()) {
@@ -60,7 +56,7 @@ class MemoryCache {
                 if (size <= limit)
                     break;
             }
-            Log.i(TAG, "Clean cache. New size " + cache.size());
+
         }
     }
 

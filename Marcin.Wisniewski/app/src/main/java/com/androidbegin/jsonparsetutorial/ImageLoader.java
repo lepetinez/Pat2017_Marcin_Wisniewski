@@ -21,19 +21,21 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class ImageLoader {
+    private final static int TIMEOUT = 3000;
+    private final static int DIVIDER = 2;
+    private final static int N_THREADS = 5;
+    private static final int REQUIRED_SIZE = 180;
     private final MemoryCache memoryCache = new MemoryCache();
     private final FileCache fileCache;
     private final Map<ImageView, String> imageViews = Collections
             .synchronizedMap(new WeakHashMap<ImageView, String>());
     private final ExecutorService executorService;
     private final Handler handler = new Handler();
-    private final static int TIMEOUT = 3000;
-    private static final int REQUIRED_SIZE = 180;
-    private final int stub_id = R.drawable.temp_img;
+    private final int STUB_ID = R.drawable.temp_img;
 
     ImageLoader(Context context) {
         fileCache = new FileCache(context);
-        executorService = Executors.newFixedThreadPool(5);
+        executorService = Executors.newFixedThreadPool(N_THREADS);
     }
 
     void DisplayImage(String url, ImageView imageView) {
@@ -43,7 +45,7 @@ class ImageLoader {
             imageView.setImageBitmap(bitmap);
         else {
             queuePhoto(url, imageView);
-            imageView.setImageResource(stub_id);
+            imageView.setImageResource(STUB_ID);
         }
     }
 
@@ -91,12 +93,12 @@ class ImageLoader {
             int width_tmp = o.outWidth, height_tmp = o.outHeight;
             int scale = 1;
             while (true) {
-                if (width_tmp / 2 < REQUIRED_SIZE
-                        || height_tmp / 2 < REQUIRED_SIZE)
+                if (width_tmp / DIVIDER < REQUIRED_SIZE
+                        || height_tmp / DIVIDER < REQUIRED_SIZE)
                     break;
-                width_tmp /= 2;
-                height_tmp /= 2;
-                scale *= 2;
+                width_tmp /= DIVIDER;
+                height_tmp /= DIVIDER;
+                scale *= DIVIDER;
             }
             BitmapFactory.Options o2 = new BitmapFactory.Options();
             o2.inSampleSize = scale;
@@ -164,7 +166,7 @@ class ImageLoader {
             if (bitmap != null)
                 photoToLoad.imageView.setImageBitmap(bitmap);
             else
-                photoToLoad.imageView.setImageResource(stub_id);
+                photoToLoad.imageView.setImageResource(STUB_ID);
         }
     }
 

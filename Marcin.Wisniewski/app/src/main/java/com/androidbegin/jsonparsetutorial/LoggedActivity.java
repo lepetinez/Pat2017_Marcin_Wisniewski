@@ -28,8 +28,14 @@ public class LoggedActivity extends Activity {
     private final static String FILE_TWO = "/page_1.json";
     private final static String FILE_THREE = "/page_2.json";
     private static final String PREFS_NAME = "mypref";
+    private static final String DIALOG_TITLE = "Zadanie3";
+    private static final String DIALOG_MESSAGE = "Loading...";
+    private static final String JSON_ARRAY = "array";
+    private static final String JSON_LOADING_ERROR = "Can't load data. Try again later";
     private final static int THREAD_SLEEP = 500;
-    private final static int TOTAL_ELEMENTS_LIMIT=30;
+    private final static int TOTAL_ELEMENTS_LIMIT = 30;
+    private final static int FIRST_PAGE_END = 10;
+    private final static int SECOND_PAGE_END = 20;
     private int LOADED_PAGE = 0;
     private GridView listview;
     private ListViewAdapter adapter;
@@ -64,11 +70,11 @@ public class LoggedActivity extends Activity {
 
     private void paginate(int visibleItemCount, int firstVisibleItem, int totalItemCount) {
         int lastIndexInScreen = visibleItemCount + firstVisibleItem;
-        if (lastIndexInScreen >= totalItemCount && totalItemCount == 10 && !LOAD_MORE) {
+        if (lastIndexInScreen >= totalItemCount && totalItemCount == FIRST_PAGE_END && !LOAD_MORE) {
             LOAD_MORE = true;
             LOADED_PAGE++;
             new DownloadJSON().execute();
-        } else if (lastIndexInScreen >= totalItemCount && totalItemCount == 20 && LOAD_MORE) {
+        } else if (lastIndexInScreen >= totalItemCount && totalItemCount == SECOND_PAGE_END && LOAD_MORE) {
             LOAD_MORE = false;
             LOADED_PAGE++;
             new DownloadJSON().execute();
@@ -96,8 +102,8 @@ public class LoggedActivity extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
             mProgressDialog = new ProgressDialog(LoggedActivity.this);
-            mProgressDialog.setTitle("Zadanie3");
-            mProgressDialog.setMessage("Loading...");
+            mProgressDialog.setTitle(DIALOG_TITLE);
+            mProgressDialog.setMessage(DIALOG_MESSAGE);
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.show();
         }
@@ -118,20 +124,20 @@ public class LoggedActivity extends Activity {
             if (jsonobject == null) {
                 runOnUiThread(new Runnable() {
                     public void run() {
-                        Toast.makeText(LoggedActivity.this, "Can't load data. Try again later", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoggedActivity.this, JSON_LOADING_ERROR, Toast.LENGTH_SHORT).show();
                     }
                 });
                 return null;
             }
             try {
-                JSONArray jsonarray = jsonobject.getJSONArray("array");
+                JSONArray jsonarray = jsonobject.getJSONArray(JSON_ARRAY);
 
                 for (int i = 0; i < jsonarray.length(); i++) {
                     HashMap<String, String> map = new HashMap<>();
                     jsonobject = jsonarray.getJSONObject(i);
-                    map.put("title", jsonobject.getString("title"));
-                    map.put("desc", jsonobject.getString("desc"));
-                    map.put("url", jsonobject.getString("url"));
+                    map.put(TITLE, jsonobject.getString(TITLE));
+                    map.put(DESC, jsonobject.getString(DESC));
+                    map.put(URL, jsonobject.getString(URL));
                     arraylist.add(map);
                 }
             } catch (JSONException e) {
