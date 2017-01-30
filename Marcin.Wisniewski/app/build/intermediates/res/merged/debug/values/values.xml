@@ -435,8 +435,12 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="ems">10</integer>
     <integer name="google_play_services_version">9877000</integer>
+    <integer name="large_listview_columns">4</integer>
+    <integer name="normal_listview_columns">2</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="typical_element_weight">1</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -490,6 +494,7 @@
     <string name="login">Login:</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="weight">0.77</string>
     <string name="zaloguj_sie">zaloguj sie</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

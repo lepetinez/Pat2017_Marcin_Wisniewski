@@ -775,8 +775,12 @@ int id wrap_content 0x7f0a001c
 int integer abc_config_activityDefaultDur 0x7f0b0000
 int integer abc_config_activityShortDur 0x7f0b0001
 int integer cancel_button_image_alpha 0x7f0b0002
-int integer google_play_services_version 0x7f0b0003
-int integer status_bar_notification_info_maxnum 0x7f0b0004
+int integer ems 0x7f0b0003
+int integer google_play_services_version 0x7f0b0004
+int integer large_listview_columns 0x7f0b0005
+int integer normal_listview_columns 0x7f0b0006
+int integer status_bar_notification_info_maxnum 0x7f0b0007
+int integer typical_element_weight 0x7f0b0008
 int layout abc_action_bar_title_item 0x7f030000
 int layout abc_action_bar_up_container 0x7f030001
 int layout abc_action_bar_view_list_nav_layout 0x7f030002
@@ -880,7 +884,8 @@ int string haslo 0x7f050033
 int string login 0x7f050034
 int string search_menu_title 0x7f050024
 int string status_bar_notification_info_overflow 0x7f050025
-int string zaloguj_sie 0x7f050035
+int string weight 0x7f050035
+int string zaloguj_sie 0x7f050036
 int style AlertDialog_AppCompat 0x7f0700a0
 int style AlertDialog_AppCompat_Light 0x7f0700a1
 int style Animation_AppCompat_Dialog 0x7f0700a2

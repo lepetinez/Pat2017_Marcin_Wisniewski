@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="typical_element_weight">1</integer>
+    <integer name="normal_listview_columns">2</integer>
+    <integer name="large_listview_columns">4</integer>
+    <integer name="ems">10</integer>
+</resources>

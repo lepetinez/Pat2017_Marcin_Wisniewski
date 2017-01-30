@@ -2440,8 +2440,12 @@ containing a value of this type.
         public static final int abc_config_activityDefaultDur=0x7f0b0000;
         public static final int abc_config_activityShortDur=0x7f0b0001;
         public static final int cancel_button_image_alpha=0x7f0b0002;
-        public static final int google_play_services_version=0x7f0b0003;
-        public static final int status_bar_notification_info_maxnum=0x7f0b0004;
+        public static final int ems=0x7f0b0003;
+        public static final int google_play_services_version=0x7f0b0004;
+        public static final int large_listview_columns=0x7f0b0005;
+        public static final int normal_listview_columns=0x7f0b0006;
+        public static final int status_bar_notification_info_maxnum=0x7f0b0007;
+        public static final int typical_element_weight=0x7f0b0008;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f030000;
@@ -2549,7 +2553,8 @@ containing a value of this type.
         public static final int login=0x7f050034;
         public static final int search_menu_title=0x7f050024;
         public static final int status_bar_notification_info_overflow=0x7f050025;
-        public static final int zaloguj_sie=0x7f050035;
+        public static final int weight=0x7f050035;
+        public static final int zaloguj_sie=0x7f050036;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0700a0;

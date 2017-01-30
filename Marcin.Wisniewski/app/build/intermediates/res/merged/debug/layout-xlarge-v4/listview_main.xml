@@ -7,7 +7,7 @@
         android:id="@+id/listview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:numColumns="2"
+        android:numColumns="@integer/large_listview_columns"
         android:background="@color/greywhite"
         android:horizontalSpacing="@dimen/listViewHorizontalSpacing"
         android:verticalSpacing="@dimen/listViewVerticalSpacing" />
