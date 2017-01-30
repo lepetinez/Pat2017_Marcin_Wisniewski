@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#fff"
+    android:background="@color/white"
     android:paddingBottom="@dimen/largeListvievItemPaddingBottom"
     android:paddingTop="@dimen/largeListviewItemPaddingTop"
     >
@@ -11,7 +11,7 @@
         android:id="@+id/url"
         android:layout_width="@dimen/largeImageViewWidth"
         android:layout_height="@dimen/largeImageViewHeight"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:paddingLeft="@dimen/largeImagePaddingLeft"
 
         />
@@ -20,7 +20,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
+        android:textSize="@dimen/xlargeTextSize"
         android:layout_toRightOf="@+id/url"
         android:layout_alignParentLeft="false"
         android:layout_alignParentRight="false"

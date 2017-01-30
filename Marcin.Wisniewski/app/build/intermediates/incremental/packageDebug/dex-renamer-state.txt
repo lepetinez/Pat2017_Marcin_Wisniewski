@@ -1,4 +1,7 @@
-#Mon Jan 30 16:26:09 CET 2017
-base.0=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Mon Jan 30 23:45:39 CET 2017
+base.0=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_22b0bfb9038f4251fc0eea97f32b9e703ef6c8f1
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_61ddd96998f24e40a65dfd9bdb8ed07f96cafbba\\classes.dex
+base.1=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_61ddd96998f24e40a65dfd9bdb8ed07f96cafbba
+file.0=C\:\\Users\\Pc\\Desktop\\blstreamzadanie33\\Pat2017_Marcin_Wisniewski\\Marcin.Wisniewski\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_22b0bfb9038f4251fc0eea97f32b9e703ef6c8f1\\classes.dex

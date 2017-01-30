@@ -51,12 +51,12 @@ public final class R {
 		public static final int userInputValue = 0x7f0100c4;
 	}
 	public static final class color {
-		public static final int common_google_signin_btn_text_dark = 0x7f090058;
+		public static final int common_google_signin_btn_text_dark = 0x7f09005a;
 		public static final int common_google_signin_btn_text_dark_default = 0x7f090013;
 		public static final int common_google_signin_btn_text_dark_disabled = 0x7f090014;
 		public static final int common_google_signin_btn_text_dark_focused = 0x7f090015;
 		public static final int common_google_signin_btn_text_dark_pressed = 0x7f090016;
-		public static final int common_google_signin_btn_text_light = 0x7f090059;
+		public static final int common_google_signin_btn_text_light = 0x7f09005b;
 		public static final int common_google_signin_btn_text_light_default = 0x7f090017;
 		public static final int common_google_signin_btn_text_light_disabled = 0x7f090018;
 		public static final int common_google_signin_btn_text_light_focused = 0x7f090019;

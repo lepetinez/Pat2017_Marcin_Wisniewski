@@ -8,7 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:numColumns="2"
-        android:background="#e5e5e5"
+        android:background="@color/greywhite"
         android:horizontalSpacing="@dimen/listViewHorizontalSpacing"
         android:verticalSpacing="@dimen/listViewVerticalSpacing" />
 

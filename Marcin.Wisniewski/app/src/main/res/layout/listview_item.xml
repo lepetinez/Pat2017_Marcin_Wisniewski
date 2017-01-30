@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#fff"
+    android:background="@color/white"
     android:paddingBottom="@dimen/listviewLayoutPaddingBotton"
     android:paddingTop="@dimen/listViewLayoutPaddingTop"
     >
@@ -12,7 +12,7 @@
         android:id="@+id/url"
         android:layout_width="@dimen/imageViewWidth"
         android:layout_height="@dimen/imageViewHeight"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:paddingLeft="@dimen/listViewLayoutPaddingLeft"
 
          />
