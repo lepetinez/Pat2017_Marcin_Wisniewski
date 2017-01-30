@@ -21,6 +21,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     private static final String PREF_USERNAME = "username";
     private static final String PREF_PASSWORD = "password";
     private static final int PERMISSION_REQUEST_CODE = 1;
+    private static final int SDK_NEEDS_PERMISSION= 23;
     private EditText emailEditText;
     private EditText passwordEditText;
 
@@ -51,7 +52,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     }
 
     private void checkSDK() {
-        if (Build.VERSION.SDK_INT >= 23) {
+        if (Build.VERSION.SDK_INT >= SDK_NEEDS_PERMISSION) {
             if (!checkPermission()) {
                 requestPermission();
             }

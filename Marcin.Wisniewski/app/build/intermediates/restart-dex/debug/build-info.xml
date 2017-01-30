@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="25"
-    density="xhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="17"
+    density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="199791981238020"
-    token="4186961315664107399"
+    timestamp="261835068469336"
+    token="-3345102945684238900"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="384" />
+        duration="583" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="452" />
+        duration="613" />
     <task
         name="verifier"
-        duration="165" />
+        duration="151" />
 
     <artifact
-        location="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\outputs\apk\app-debug.apk"
+        location="C:\Users\Pc\Desktop\blstreamzadanie33\Pat2017_Marcin_Wisniewski\Marcin.Wisniewski\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="199791981238020"
+        timestamp="261835068469336"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Pc\Desktop\labodomowe\zadaniaDomowe\zadanie1\Marcin.Wisniewski\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Pc\Desktop\blstreamzadanie33\Pat2017_Marcin_Wisniewski\Marcin.Wisniewski\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

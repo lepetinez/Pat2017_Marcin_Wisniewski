@@ -27,6 +27,8 @@ class ImageLoader {
             .synchronizedMap(new WeakHashMap<ImageView, String>());
     private final ExecutorService executorService;
     private final Handler handler = new Handler();
+    private final static int TIMEOUT = 3000;
+    private static final int REQUIRED_SIZE = 180;
     private final int stub_id = R.drawable.temp_img;
 
     ImageLoader(Context context) {
@@ -61,8 +63,8 @@ class ImageLoader {
             URL imageUrl = new URL(url);
             HttpURLConnection conn = (HttpURLConnection) imageUrl
                     .openConnection();
-            conn.setConnectTimeout(3000);
-            conn.setReadTimeout(3000);
+            conn.setConnectTimeout(TIMEOUT);
+            conn.setReadTimeout(TIMEOUT);
             conn.setInstanceFollowRedirects(true);
             InputStream is = conn.getInputStream();
             OutputStream os = new FileOutputStream(f);
@@ -86,7 +88,6 @@ class ImageLoader {
             FileInputStream stream1 = new FileInputStream(f);
             BitmapFactory.decodeStream(stream1, null, o);
             stream1.close();
-            final int REQUIRED_SIZE = 180;
             int width_tmp = o.outWidth, height_tmp = o.outHeight;
             int scale = 1;
             while (true) {

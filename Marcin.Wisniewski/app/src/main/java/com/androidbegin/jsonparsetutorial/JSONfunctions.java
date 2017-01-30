@@ -17,6 +17,8 @@ import java.net.URL;
 
 class JSONfunctions {
     private static final String TAG = JSONfunctions.class.getSimpleName();
+    private static final String REQUEST_GET = "GET";
+    private static final int BUFFER_SIZE = 8;
 
     static JSONObject getJSONfromURL(String requrl) {
         InputStream is;
@@ -25,11 +27,11 @@ class JSONfunctions {
         try {
             URL url = new URL(requrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
+            conn.setRequestMethod(REQUEST_GET);
             is = new BufferedInputStream(conn.getInputStream());
             try {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(
-                        is, "iso-8859-1"), 8);
+                        is, "iso-8859-1"), BUFFER_SIZE);
                 StringBuilder sb = new StringBuilder();
                 String line;
                 while ((line = reader.readLine()) != null) {

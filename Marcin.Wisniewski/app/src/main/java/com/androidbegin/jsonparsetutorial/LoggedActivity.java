@@ -29,6 +29,7 @@ public class LoggedActivity extends Activity {
     private final static String FILE_THREE = "/page_2.json";
     private static final String PREFS_NAME = "mypref";
     private final static int THREAD_SLEEP = 500;
+    private final static int TOTAL_ELEMENTS_LIMIT=30;
     private int LOADED_PAGE = 0;
     private GridView listview;
     private ListViewAdapter adapter;
@@ -49,7 +50,7 @@ public class LoggedActivity extends Activity {
 
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                if (totalItemCount < 30) {
+                if (totalItemCount < TOTAL_ELEMENTS_LIMIT) {
                     paginate(visibleItemCount, firstVisibleItem, totalItemCount);
                 }
             }
